@@ -2,15 +2,41 @@
 
 ![spark-switch](Images/3D/Main-View.png)
 
-## What is it
+# Navigation
+- [About project](#about-project-what-is-it)
+  - [Motivation for the project](#motivation-for-the-project-why-i-made-it)
+  - [Learning outcomes](#learning-outcomes-what-i-learned)
+  - [Design decisions](#design-decisions)
+  - [Directory overview](#directory-overview)
+  - [Parts used](#parts-used)
+  - [Developement tools](#developement-tools-tools-used)
+  - [Features](#features)
+  - [System architecture](#system-architecture)
+  - [Block diagram](#block-diagram)
+- [Documentation](#documentation)
+- [Blog post](#blog-post)
+- [Project status](#project-status)
+- [Images](#images)
+  - [2D](#2d)
+  - [3D](#3d)
+  - [Gerber files](#gerber-files)
+- [License](#license)
+  - [PCB / Schematic](#pcb--schematic-license)
+  - [Software](#software-license)
+  - [3D files and images](#3d-files-and-images-license)
+- [Bill of Materials](#bom)
 
-spark-switch is my own open-source 5 port GbE managed Ethernet switch.
+# About project (What is it)
 
-## Why i made it
+spark-switch is 6 layer USB-C powered 5 port GbE managed Ethernet switch. It features WebUI interface for configuration and optional MQTT reporting of per-port statistics to Home Assistant (more of the features are listed [here](#features)).
 
-I made this project because I love tinkering and wanted to use my need for an Ethernet switch as a way to teach myself differential pair routing. And it worked! I learned a lot!
+It originated as a hobby project that filled my need for an Ethernet switch as well as taught me high-speed interface routing, and evolved into this fully open source Ethernet switch that is replicable by anyone and fully documented, designed for transparency.
 
-## What i learned
+## Motivation for the project (Why I made it)
+
+I made this project because I love tinkering and wanted to use my need for an Ethernet switch as a way to teach myself differential pair routing. And I learned a lot from this. More information about what I learned is listed under [Learning outcomes](#learning-outcomes-what-i-learned) and information about challenges is included in [blog post](#blog-post).
+
+## Learning outcomes (What I learned)
 
 I learned:
 - How to properly route differential pairs
@@ -19,7 +45,7 @@ I learned:
 - How to properly manage the GND plane 
 - How to work with high speed interfaces
 
-# Design decisions
+## Design decisions
 
 - 100 Ohm differential controlled impedance for Ethernet traces
 - 50 Ohm single ended controlled impedance for RMII and SPI
@@ -28,7 +54,7 @@ I learned:
 - FR4, 1.6mm thickness
 - Via-In-Pad using JLCPCB's free Plated-Over Filled Via technology
 
-# Directory overview
+## Directory overview
 
 - Firmware project is available in `/Firmware`
 - 3D case files as well as Fusion360 project files are available in `/3D`
@@ -37,22 +63,23 @@ I learned:
 - Schematic PDF is available in `/Schematic`
 - BOM is available in `/BOM.csv` and at the end of README
 - Gerber files are available in `/Gerbers`
+- Documentation is available in `/Docs`
 
-# Parts used
+## Parts used
 
 - STM32F469BET6 as management microcontroller
 - KSZ9477STXI as switch IC
-- Bel Fuse 0826-1G1T-23-F as RJ45 port
+- Bel Fuse 0826-1G1T-23-F as RJ45 ports
 - ADP2116AACPZ-R7 as 2.5V and 1.2V Buck voltage converter
 - TLV76733DRVR as 3.3V LDO voltage converter
 
-# Tools used
+## Developement tools (Tools used)
 
 - EasyEda Pro for EDA work
 - Fusion360 Educational for 3D work
-- STM32CubeMX and STM32CubeIDE for firmware
+- STM32CubeMX, STM32CubeIDE and CLion for firmware
 
-# Features
+## Features
 
 - Management via WebUI
 - Port parameter reporting to Home Assistant via MQTT
@@ -61,6 +88,36 @@ I learned:
 - Powered by USB-C (5V 3A max)
 - Open-Source
 - RJ45 ports with integrated magnetics
+
+## Block diagram
+
+![Block diagram](Images/Block-Diagram.svg)
+
+### MCU <-> switch IC communication
+
+Communication happens through 2 different interfaces, each with their own purpose. SPI ensures proper management of switch IC, while RMII provides connectivity required for WebUI and MQTT reporting features.
+
+### Power
+
+spark-switch is powered through standard USB-C 5V 2-3A connection. This decision was made to ensure easy usage of device due to its standardization across the world and availability.
+
+Initial 5V from USB-C port is converted to 3.3V by LDO, used for MCU overall power needs and switch IC's digital interfaces, 2.5V for switch IC's core logic, and 1.2V for switch IC's PHY and analog interfaces.
+
+# Documentation
+
+See [docs](Docs/README.md).
+
+# Blog post
+
+See [this link](link-here) *Coming soon!*
+
+# Project status
+
+- PCB: Designed (Not tested)
+- Firmware: Prototype version (Not tested)
+- Docs: In work
+- 3D case: Designed (Not tested)
+- Blog post: Coming soon
 
 # Images
 
@@ -87,6 +144,18 @@ Bottom view
 EasyEda Pro 3D viewer
 
 ![EasyEda Pro 3D viewer](Images/3D/Main-View.png)
+
+3D case + PCB
+
+![3D case + PCB](Images/3D/Case.png)
+
+Top plate
+
+![Top plate](Images/3D/Top-Plate.png)
+
+Bottom case
+
+![Bottom case](Images/3D/Bottom-Case.png)
 
 </details>
 
@@ -133,19 +202,19 @@ Layer 6 / Bottom layer / Signal
 
 ## PCB / Schematic License
 
-All files in `/PCB`, `/Schematic` and `/Gerbers` folders are licensed under the CERN Open Hardware License v2 (Weakly Reciprocal).
+All files in `/PCB`, `/Schematic` and `/Gerbers` folders and their subsequent subfolders are licensed under the CERN Open Hardware License v2 (Weakly Reciprocal).
 
 See `/Licenses/CERN-OHL.txt` for full terms.
 
 ## Software License
 
-All files in `/Firmware` folder are licensed under the Apache 2.0 License.
+All files in `/Firmware` folder and their subsequent subfolders are licensed under the Apache 2.0 License.
 
 See `/Licenses/Apache-2.0.txt` for full terms.
 
-## 3D files and images
+## 3D files, images and documentation License
 
-All files in `/3D` and `/Images` folders are licensed under the CC-BY 4.0 License.
+All files in `/3D` `/Images` and `/Docs` folders and their subsequent subfolders are licensed under the CC-BY 4.0 License.
 
 See `/Licenses/CC-BY-4.0.txt` for full terms
 

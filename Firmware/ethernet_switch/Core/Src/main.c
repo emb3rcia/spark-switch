@@ -25,6 +25,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "kszspi.h"
+#include "config.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -34,7 +35,8 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define MIB_RX_BYTE_CNT 0x80
+#define MIB_TX_BYTE_CNT 0x81
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -105,7 +107,7 @@ int main(void)
   MX_DMA_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
-  KSZ_SPI_Init();
+  Config_Init();
   /* USER CODE END 2 */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -466,10 +468,53 @@ void StartDefaultTask(void const * argument)
   /* init code for LWIP */
   MX_LWIP_Init();
   /* USER CODE BEGIN 5 */
+  if (KSZ_SPI_Init() == 1) {
+
+  } else {
+
+  }
+
+  uint16_t speed = 0;
+  uint8_t duplex = 0;
+  uint8_t link_status = 0;
+  uint64_t rx_bytes = 0;
+  uint64_t tx_bytes = 0;
+
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+
+    char *json_buffer = (char *)pvPortMalloc(512);
+
+    if (json_buffer != NULL) {
+      int offset = 0;
+
+      offset += snprintf(json_buffer + offset, sizeof(json_buffer) - offset, "{");
+
+      for (int i = 1; i < 8; i++) {
+        link_status = KSZ_GetPortStatus(i, &speed, &duplex);
+        if (link_status == 1) {
+          rx_bytes = KSZ_ReadMIB(i, MIB_RX_BYTE_CNT);
+          tx_bytes = KSZ_ReadMIB(i, MIB_TX_BYTE_CNT);
+        } else {
+          rx_bytes = 0;
+          tx_bytes = 0;
+        }
+        offset += snprintf(json_buffer + offset, sizeof(json_buffer) - offset,
+                     "\"port_%d\":{\"link\":%d,\"speed\":%d,\"duplex\":%d,\"rx\":%llu,\"tx\":%llu}%s",
+                     i, link_status, speed, duplex, rx_bytes, tx_bytes,
+                     (i == 7) ? "" : ",");
+      }
+      snprintf(json_buffer + offset, sizeof(json_buffer) - offset, "}");
+
+      char *pointer_to_send = json_buffer;
+
+      if (xQueueSend(mqttPublishQueueHandle, &json_buffer, pdMS_TO_TICKS(10)) != pdPASS) {
+        vPortFree(json_buffer);
+      }
+    }
+
+    osDelay(1000);
   }
   /* USER CODE END 5 */
 }
@@ -502,10 +547,42 @@ void StartTask02(void const * argument)
 void StartTask03(void const * argument)
 {
   /* USER CODE BEGIN StartTask03 */
+  mqtt_client_t *client = mqtt_client_new();
+
+  ip_addr_t broker_ip;
+  struct mqtt_connect_client_info_t ci;
+
+  memset(&ci, 0, sizeof(ci));
+  ci.client_id = "stm32_switch";
+  ci.keep_alive = 60;
+
+  char *received_json = NULL;
+
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+    if (xQueueReceive(mqttPublishQueueHandle, &received_json, portMAX_DELAY) == pdPASS)
+    {
+      if (client != NULL) {
+        ipaddr_aton(CurrentConfig.mqtt_broker_ip, &broker_ip);
+        if (!mqtt_client_is_connected(client)) {
+          mqtt_client_connect(client, &broker_ip, 1883, NULL, NULL, &ci);
+
+          osDelay(200);
+        }
+
+        if (mqtt_client_is_connected(client))
+        {
+          mqtt_publish(client,
+                       "homeassistant/sensor/ksz9477/state",
+                       received_json,
+                       strlen(received_json),
+                       0, 0, NULL, NULL);
+        }
+      }
+
+      vPortFree(received_json);
+    }
   }
   /* USER CODE END StartTask03 */
 }
