@@ -1,38 +1,40 @@
-No.,Quantity,Comment,Value,Manufacturer Part,Manufacturer,Supplier Part,Supplier,Price,Ordered,Why more/less,Link
-1,1,2.2uH,2.2uH,APH0530T2R2M,APV,C5349681,LCSC,$0.41,5,Minimal order is 5,https://www.lcsc.com/product-detail/C5349681.html
-2,1,3.3uH,3.3uH,FEXL0530A-3R3M,cjiang,C5378512,LCSC,$1.12,1,N/A,https://www.lcsc.com/product-detail/C5378512.html
-3,1,4.7kΩ,4.7kΩ,RC0603FR-074K7L,YAGEO,C99782,LCSC,$0.13,100,Minimal order is 100,https://www.lcsc.com/product-detail/C99782.html
-4,1,4.7uF,4.7uF,CL10A475KA8NQNC,SAMSUNG,C69335,LCSC,$0.16,10,Minimal order is 10,https://www.lcsc.com/product-detail/C69335.html
-5,1,6.04kΩ,6.04kΩ,0603WAF6041T5E,UNI-ROYAL,C25977,LCSC,$0.13,100,Minimal order is 100,https://www.lcsc.com/product-detail/C25977.html
-6,1,8.2kΩ,8.2kΩ,RC0603FR-078K2L,YAGEO,C114637,LCSC,$0.15,100,Minimal order is 100,https://www.lcsc.com/product-detail/C114637.html
-7,1,10uF,10uF,CL10A106MA8NRNC,SAMSUNG,C96446,LCSC,$0.34,20,Minimal order is 20,https://www.lcsc.com/product-detail/C96446.html
-8,1,10Ω,10Ω,FRC0603J100 TS,FOJAN,C2907091,LCSC,$0.10,100,Minimal order is 100,https://www.lcsc.com/product-detail/C2907091.html
-9,1,22uF,22uF,CL32B226KAJNNNE,SAMSUNG,C309062,LCSC,$0.13,1,N/A,https://www.lcsc.com/product-detail/C309062.html
-10,1,27kΩ,27kΩ,RC0603FR-0727KL,YAGEO,C114614,LCSC,$0.15,100,Minimal order is 100,https://www.lcsc.com/product-detail/C114614.html
-11,1,100nF,100nF,C3225C0G1H104JT000N,TDK,C338021,LCSC,$0.56,1,N/A,https://www.lcsc.com/product-detail/C338021.html
-12,1,191Ω,191Ω,RMC06031911%N,Tyohm,C269413,LCSC,$0.31,100,Minimal order is 100,https://www.lcsc.com/product-detail/C269413.html
-13,1,ADP2116ACPZ-R7,,ADP2116ACPZ-R7,ADI,C659049,LCSC,$3.36,1,N/A,https://www.lcsc.com/product-detail/C659049.html
-14,1,KSZ9477STXI-TR,,KSZ9477STXI-TR,MICROCHIP,C631685,LCSC,$20.08,1,N/A,https://www.lcsc.com/product-detail/C631685.html
-15,1,RCLAMP0502BATCT,,RCLAMP0502BATCT,SEMTECH,C117553,LCSC,$1.13,5,Minimal order is 5,https://www.lcsc.com/product-detail/C117553.html
-16,1,SMA6L5.0A,,SMA6L5.0A,Littelfuse,C1974860,LCSC,$0.79,1,N/A,https://www.lcsc.com/product-detail/C1974860.html
-17,1,STM32F469BET6,,STM32F469BET6,ST,C1342980,LCSC,$18.73,1,N/A,https://www.lcsc.com/product-detail/C1342980.html
-18,1,TLV76733DRVR,,TLV76733DRVR,TI,C2848334,LCSC,$0.98,5,Minimal order is 5,https://www.lcsc.com/product-detail/C2848334.html
-19,1,TS6643TP 250gf 009,,TS6643TP 250gf 009,SHOU HAN,C5342967,LCSC,N/A,0,I already have them,https://www.lcsc.com/product-detail/C5342967.html
-20,1,TYPE-C 16PIN 2MD(073),,TYPE-C 16PIN 2MD(073),SHOU HAN,C2765186,LCSC,N/A,0,I already have them,https://www.lcsc.com/product-detail/C2765186.html
-21,2,1kΩ,1kΩ,FRC0603F1001TS,FOJAN,C2907002,LCSC,$0.12,100,Minimal order is 100,https://www.lcsc.com/product-detail/C2907002.html
-22,2,1nF,1nF,1808B102K302NT,FH,C967608,LCSC,$0.70,10,Minimal order is 10,https://www.lcsc.com/product-detail/C967608.html
-23,2,2.2uF,2.2uF,CGA0603X5R225K250JT,HRE,C6119859,LCSC,$0.80,100,Minimal order is 100,https://www.lcsc.com/product-detail/C6119859.html
-24,2,5.1kΩ,5.1kΩ,FRC0603F5101TS,FOJAN,C2907044,LCSC,$0.12,100,Minimal order is 100,https://www.lcsc.com/product-detail/C2907044.html
-25,2,25MHz,25MHz,SX1M25.000M10F30TNN,SCTF,C2901612,LCSC,$0.57,1,N/A,https://www.lcsc.com/product-detail/C2901612.html
-26,2,30kΩ,30kΩ,FRC0603F3002TS,FOJAN,C2907025,LCSC,$0.12,100,Minimal order is 100,https://www.lcsc.com/product-detail/C2907025.html
-27,2,47uF,47uF,CS3225X7R476K100NRL,SAMWHA,C5189825,LCSC,$0.45,5,Minimal order is 5,https://www.lcsc.com/product-detail/C5189825.html
-28,2,820pF,820pF,CC0603JRNPO8BN821,YAGEO,C519398,LCSC,$0.42,100,Minimal order is 100,https://www.lcsc.com/product-detail/C519398.html
-29,3,22uF,22uF,GRM188C61E226ME01D,muRata,C29519229,LCSC,$0.92,5,Minimal order is 5,https://www.lcsc.com/product-detail/C29519229.html
-30,4,10nF,10nF,CC0603JRNPO8BN103,YAGEO,C723749,LCSC,$0.81,50,Minimal order is 50,https://www.lcsc.com/product-detail/C723749.html
-31,5,0826-1G1T-23-F,,0826-1G1T-23-F,Bel Magnetic Solutions,530-0826-1G1T-23-F,Mouser,$36.75,5,N/A,https://www.mouser.pl/ProductDetail/Bel-Magnetic-Solutions/0826-1G1T-23-F?qs=SRYZG9HaIQ0yqJ%252BCqOsSRg%3D%3D
-32,6,1uF,1uF,CL10B105KB8NQNC,SAMSUNG,C5199872,LCSC,$0.42,50,Minimal order is 50,https://www.lcsc.com/product-detail/C5199872.html
-33,10,33Ω,33Ω,FRC0603F33R0TS,FOJAN,C2909394,LCSC,$0.12,100,Minimal order is 100,https://www.lcsc.com/product-detail/C2909394.html
-34,16,10kΩ,10kΩ,RC0603FR-0710KL,YAGEO,C98220,LCSC,$0.13,100,Minimal order is 100,https://www.lcsc.com/product-detail/C98220.html
-35,73,100nF,100nF,CL10B104KA8NNNC,SAMSUNG,C1590,LCSC,$0.36,100,Minimal order is 100,https://www.lcsc.com/product-detail/C1590.html
-36,,PCB,,,,,JLCPCB,$45.90 + $7.90 shipping,5,Minimal order is 5,https://www.jlcpcb.com
-,,,,,,,Total,$145.37,,,
+Mouser No,Mfr. No,Manufacturer,Description ,Order Qty.,Price (USD),Ext.: (USD),Link
+504-HCM1A0503V22R2R,HCM1A0503V2-2R2-R,Eaton,Power Inductors - SMD IND MP 2.2uH 6.4A molded 2 PADS SMT,1,$0.93,$0.93,https://eu.mouser.com/ProductDetail/Eaton-Electronics/HCM1A0503V2-2R2-R?qs=XeJtXLiO41RWBA51gkEp5A%3D%3D
+704-HCM0503-3R3-R,HCM0503-3R3-R,Eaton,Power Inductors - SMD 3.3uH 6.0A,1,$0.77,$0.77,https://eu.mouser.com/ProductDetail/Eaton-Electronics/HCM0503-3R3-R?qs=9HiBGwelwjteGcQzzVO1cw%3D%3D
+708-RNAN0603BKE4K70,RNAN0603BKE4K70,SEI Stackpole,Thin Film Resistors - SMD 4.7KOhms 0603 25ppm Tol 0.1% High Power Alum Nitride,1,$0.98,$0.98,https://eu.mouser.com/ProductDetail/SEI-Stackpole/RNAN0603BKE4K70?qs=bpu3f%2FCR1jzwNjUVb54Ifw%3D%3D
+755-ESR03EZPD4701,ESR03EZPD4701,ROHM Semiconductor,Thick Film Resistors - SMD 0603 4.7Kohm 0.50% Anti Surge AEC-Q200,1,$0.30,$0.30,https://eu.mouser.com/ProductDetail/ROHM-Semiconductor/ESR03EZPD4701?qs=RLRnP5jfOJWNVmDLWgV9hw%3D%3D
+652-CR0603FX-6041ELF,CR0603-FX-6041ELF,Bourns,Thick Film Resistors - SMD 6.04K ohm 1%,1,$0.10,$0.10,https://eu.mouser.com/ProductDetail/Bourns/CR0603-FX-6041ELF?qs=0nF2VnfAjXnJh2M%2FP%252B4L9Q%3D%3D
+652-CR0603FX-8201ELF,CR0603-FX-8201ELF,Bourns,Thick Film Resistors - SMD 8.2K ohm 1%,1,$0.10,$0.10,https://eu.mouser.com/ProductDetail/Bourns/CR0603-FX-8201ELF?qs=Ody%252BWaR0NcHnKPXjxZbgSQ%3D%3D
+667-ERJ-PA3D2702V,ERJ-PA3D2702V,Panasonic,Thick Film Resistors - SMD 0603 27Kohm 0.5% Anti-Surge AEC-Q200,1,$0.24,$0.24,https://eu.mouser.com/ProductDetail/Panasonic/ERJ-PA3D2702V?qs=BzJM0faLVqVhszn7sjlJ5A%3D%3D
+594-MCT06030C1009FP5,MCT06030C1009FP500,Vishay,Thin Film Resistors - SMD .1W 10ohms 1% 0603 50ppm Auto,1,$0.10,$0.10,https://eu.mouser.com/ProductDetail/Vishay/MCT06030C1009FP500?qs=4DXlcry4fcXzntE6aB0o9Q%3D%3D
+71-CRCW0603-191,CRCW0603191RFKTA,Vishay,Thick Film Resistors - SMD 1/10watt 191ohms 1%,1,$0.16,$0.16,https://eu.mouser.com/ProductDetail/Vishay/CRCW0603191RFKTA?qs=be4vbG3eqMQfmmy1Xt7ldg%3D%3D
+279-RN73C1J1K0BTDF,RN73C1J1K0BTDF,TE Connectivity,Thin Film Resistors - SMD RN 0603 1K0 0.1% 1 0PPM,2,$0.68,$1.36,https://eu.mouser.com/ProductDetail/TE-Connectivity/RN73C1J1K0BTDF?qs=HLeXuo0aL2rjI2NxXJrhbQ%3D%3D
+652-CR0603FX-5101ELF,CR0603-FX-5101ELF,Bourns,Thick Film Resistors - SMD 5.1K ohm 1%,2,$0.10,$0.20,https://eu.mouser.com/ProductDetail/Bourns/CR0603-FX-5101ELF?qs=0nF2VnfAjXkzZl7D0jRjmQ%3D%3D
+667-ERA-3AED303V,ERA-3AED303V,Panasonic,Thin Film Resistors - SMD 0603 30Kohms 25ppm 0.5% AEC-Q200,2,$0.17,$0.34,https://eu.mouser.com/ProductDetail/Panasonic/ERA-3AED303V?qs=yocZuyCaXdMHimFdtSiPeQ%3D%3D
+667-ERJ-3RED33R0V,ERJ-3RED33R0V,Panasonic,Thick Film Resistors - SMD 0603 Resistor 0.5% 100ppm 33Ohm,10,$0.142,$1.42,https://eu.mouser.com/ProductDetail/Panasonic/ERJ-3RED33R0V?qs=KTDjhDDUMAmaGsZIgaf5Cg%3D%3D
+603-AC0603FRE0710KL,AC0603FRE0710KL,YAGEO,Thick Film Resistors - SMD 10 kOhms 100 mW 0603  1% AEC-Q200 Standard Power Version,16,$0.02,$0.32,https://eu.mouser.com/ProductDetail/YAGEO/AC0603FRE0710KL?qs=xZ%2FP%252Ba9zWqYHurLrMYPPHg%3D%3D
+584-ADP2116ACPZ-R7,ADP2116ACPZ-R7,Analog Devices Inc.,Switching Voltage Regulators Dual-Step Down Converter w/ 3A x 2output,1,$10.36,$10.36,https://eu.mouser.com/ProductDetail/Analog-Devices-Inc/ADP2116ACPZ-R7?qs=WIvQP4zGanjhBnvaqIEPmA%3D%3D
+579-KSZ9477STXI-TR,KSZ9477STXI-TR,Microchip,"Ethernet ICs 7-Port Gigabit Ethernet Switch with Fault Recovery, 1588 v2, AVB, EEE, WOL, QoS, LinkMD+, SGMII, Industrial temp.",1,$20.91,$20.91,https://eu.mouser.com/ProductDetail/Microchip/KSZ9477STXI-TR?qs=5aG0NVq1C4xvKDJXPEDvJg%3D%3D
+947-RCLAMP0502BATCT,RCLAMP0502BATCT,Semtech,ESD Protection Diodes / TVS Diodes Low Capacitance ESD & CDE Protection,1,$0.97,$0.97,https://eu.mouser.com/ProductDetail/Semtech/RCLAMP0502BATCT?qs=rBWM4%252BvDhIc%2FZh6P%252BVApRQ%3D%3D
+576-SMA6L5.0A,SMA6L5.0A,Littelfuse,ESD Protection Diodes / TVS Diodes 600W 5V 5% Uni-Directional,1,$0.44,$0.44,https://eu.mouser.com/ProductDetail/Littelfuse/SMA6L5.0A?qs=VIHlH02q6bVPZcHxXVWyBA%3D%3D
+511-STM32F469BET6,STM32F469BET6,STMicroelectronics,"ARM Microcontrollers - MCU High-performance advanced line, Arm Cortex-M4 core DSP & FPU, 512 Kbytes of Flas",1,$8.50,$8.50,https://eu.mouser.com/ProductDetail/STMicroelectronics/STM32F469BET6?qs=dTJS0cRn7ohWTNcv3ssTNw%3D%3D
+595-TLV76733DRVR,TLV76733DRVR,Texas Instruments,LDO Voltage Regulators Adjustable- and fixe d-output 1-A 16-V A A 595-TLV76733DRVT,1,$0.94,$0.94,https://eu.mouser.com/ProductDetail/Texas-Instruments/TLV76733DRVR?qs=9r4v7xj2LnmGIkwTuPlHig%3D%3D
+963-MLASJ168BB7475KT,MLASJ168BB7475KTNA01,TAIYO YUDEN,Multilayer Ceramic Capacitors MLCC - SMD/SMT 6.3V 4.7uF X7R 0603 10% Medical,1,$0.37,$0.37,https://eu.mouser.com/ProductDetail/TAIYO-YUDEN/MLASJ168BB7475KTNA01?qs=tlsG%2FOw5FFjahgohsmNLbA%3D%3D
+603-CC0603KPX5R6B475,CC0603KPX5R6BB475,YAGEO,Multilayer Ceramic Capacitors MLCC - SMD/SMT 10V 4.7uF X5R 0603 10% HI CV,1,$0.211,$0.21,https://eu.mouser.com/ProductDetail/YAGEO/CC0603KPX5R6BB475?qs=mzRxyRlhVdtG7wG2BIZZbA%3D%3D
+963-MLASE168AB5475KT,MLASE168AB5475KTNA01,TAIYO YUDEN,Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 4.7uF X5R 0603 10% Medical,1,$0.33,$0.33,https://eu.mouser.com/ProductDetail/TAIYO-YUDEN/MLASE168AB5475KTNA01?qs=tlsG%2FOw5FFihcKM5Bww3QA%3D%3D
+963-BASJ168AB5106KT,MBASJ168AB5106KTNA01,TAIYO YUDEN,Multilayer Ceramic Capacitors MLCC - SMD/SMT 6.3V 10uF X5R 0603 10% Industrial,1,$0.17,$0.17,https://eu.mouser.com/ProductDetail/TAIYO-YUDEN/MBASJ168AB5106KTNA01?qs=tlsG%2FOw5FFip7wSSy5q9Rw%3D%3D
+963-MLASL168BB5106MT,MLASL168BB5106MTNB33,TAIYO YUDEN,Multilayer Ceramic Capacitors MLCC - SMD/SMT 10V 10uF X5R 0603 20%,1,$0.17,$0.17,https://eu.mouser.com/ProductDetail/TAIYO-YUDEN/MLASL168BB5106MTNB33?qs=tlsG%2FOw5FFiv4vsvq7EGpg%3D%3D
+963-MAASE32MSB7226MP,MAASE32MSB7226MPNA01,TAIYO YUDEN,Multilayer Ceramic Capacitors MLCC - SMD/SMT 1210 16V X7R 22uF 20% AEC-Q200,1,$0.661,$0.66,https://eu.mouser.com/ProductDetail/TAIYO-YUDEN/MAASE32MSB7226MPNA01?qs=FmjOKN4Os86zaasSFxugIA%3D%3D
+581-12101C104M,12101C104MAT2A,KYOCERA AVX,Multilayer Ceramic Capacitors MLCC - SMD/SMT KGM32RR72A104MU NEW GLOBAL PN 100V 0.1uF A 581-KGM32RR72A104MU,1,$0.22,$0.22,https://eu.mouser.com/ProductDetail/KYOCERA-AVX/12101C104MAT2A?qs=FWPE8OmxvdQRu%2FvuFEOTRw%3D%3D
+81-GR442QR73D102KW01,GR442QR73D102KW01L,Murata,Multilayer Ceramic Capacitors MLCC - SMD/SMT 1000 pF 2 kVDC 10% 1808 X7R,2,$0.59,$1.18,https://eu.mouser.com/ProductDetail/Murata/GR442QR73D102KW01L?qs=1XGAtBqYNz74JcxvF1DQuw%3D%3D
+581-KGM15BR50J225KT,KGM15BR50J225KT,KYOCERA AVX,Multilayer Ceramic Capacitors MLCC - SMD/SMT 6.3V 2.2uF X5R 0603 10%,2,$0.17,$0.34,https://eu.mouser.com/ProductDetail/KYOCERA-AVX/KGM15BR50J225KT?qs=Jm2GQyTW%2FbgTJAmtR1rY5w%3D%3D
+963-MAASL32MSB7476MP,MAASL32MSB7476MPNA01,TAIYO YUDEN,Multilayer Ceramic Capacitors MLCC - SMD/SMT 1210 10V X7R 47uF 20% AEC-Q200,1,$0.83,$0.83,https://eu.mouser.com/ProductDetail/TAIYO-YUDEN/MAASL32MSB7476MPNA01?qs=FmjOKN4Os87n4oCsWJehZg%3D%3D
+581-06035C821JAZ2A,06035C821JAZ2A,KYOCERA AVX,Multilayer Ceramic Capacitors MLCC - SMD/SMT 50V 820pF X7R 0603 5 % Tol FLEX,2,$0.34,$0.68,https://eu.mouser.com/ProductDetail/KYOCERA-AVX/06035C821JAZ2A?qs=zKGwLYtK3Ltn1p%252BM3OK9xQ%3D%3D
+81-GRM188C81A226ME1D,GRM188C81A226ME01D,Murata,Multilayer Ceramic Capacitors MLCC - SMD/SMT 0603 10VDC 22uF 20% X6S,3,$0.40,$1.20,https://eu.mouser.com/ProductDetail/Murata/GRM188C81A226ME01D?qs=doiCPypUmgGpyx8gzUcykQ%3D%3D
+581-06035A103JAT2A,06035A103JAT2A,KYOCERA AVX,Multilayer Ceramic Capacitors MLCC - SMD/SMT .01UF 50V 5% 0603,4,$0.33,$1.32,https://eu.mouser.com/ProductDetail/KYOCERA-AVX/06035A103JAT2A?qs=Cw3yY7soYCOJ7MBOLgA8ng%3D%3D
+581-KGM15BS60J105KT,KGM15BS60J105KT,KYOCERA AVX,Multilayer Ceramic Capacitors MLCC - SMD/SMT 6.3V 1uF X6S 0603 10%,6,$0.12,$0.72,https://eu.mouser.com/ProductDetail/KYOCERA-AVX/KGM15BS60J105KT?qs=PBDs2xEllI9EnrKjYPal4Q%3D%3D
+603-CC603JRX7R9BB104,CC0603JRX7R9BB104,YAGEO,Multilayer Ceramic Capacitors MLCC - SMD/SMT 50 V 0.1uF X7R 0603 5%,73,$0.035,$2.56,https://eu.mouser.com/ProductDetail/YAGEO/CC0603JRX7R9BB104?qs=57cj7OiSijmjSM%252BQadQODQ%3D%3D
+520-2016MV-250-BNT,ECS-2016MV-250-BN-TR,ECS,Standard Clock Oscillators 25MHz CMOS 1.6-3.6V,2,$1.63,$3.26,https://eu.mouser.com/ProductDetail/ECS/ECS-2016MV-250-BN-TR?qs=MLItCLRbWszJuavuZB87ww%3D%3D
+530-0826-1G1T-23-F,0826-1G1T-23-F,Bel,Modular Connectors / Ethernet Connectors RJ45 Connector,5,$7.35,$36.75,https://eu.mouser.com/ProductDetail/Bel/0826-1G1T-23-F?qs=SRYZG9HaIQ0yqJ%252BCqOsSRg%3D%3D
+N/A,N/A,JLCPCB,PCB,5,$84.99,$84.99 + $7.90 shipping,https://jlcpcb.com
+,,,,,Total,$193.30,
