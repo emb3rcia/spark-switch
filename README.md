@@ -9,7 +9,7 @@
   - [Design decisions](#design-decisions)
   - [Directory overview](#directory-overview)
   - [Parts used](#parts-used)
-  - [Developement tools](#developement-tools-tools-used)
+  - [Development tools](#development-tools-tools-used)
   - [Features](#features)
   - [Block diagram](#block-diagram)
 - [Documentation](#documentation)
@@ -72,7 +72,7 @@ I learned:
 - ADP2116AACPZ-R7 as 2.5V and 1.2V Buck voltage converter
 - TLV76733DRVR as 3.3V LDO voltage converter
 
-## Developement tools (Tools used)
+## Development tools (Tools used)
 
 - EasyEda Pro for EDA work
 - Fusion360 Educational for 3D work
